@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.036);
+    color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+    border-top: 2px solid #093f44;
+    margin-top: 20px;
+  }
+  
+  .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,146 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.036); 
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  max-width: 600px;
+  margin: 20px auto 60px;
+  transform: translateX(30px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #093f44; 
+}
+
+.contactForm h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contactForm p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.submitButton {
+  padding: 10px;
+  background-color: #9BBEC8;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #273c48;
+  color: white;
+}
+
+.successMessage {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white; 
+}
+
+.successContainer{
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.successButton {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #9BBEC8;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.successButton:hover {
+  background-color: #273c48;
+  color: white;
+}
+
+.submitButton:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .contactForm {
+    max-width: 80%;
+    transform: none;
+  }
+
+  .contactForm h2 {
+    font-size: 1.8rem;
+  }
+
+  .contactForm p {
+    font-size: 1rem;
+  }
+
+  .submitButton, .successButton {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    max-width: 90%;
+    padding: 15px;
+    transform: none;  
+  }
+
+  .contactForm h2 {
+    font-size: 1.6rem;
+  }
+
+  .contactForm p {
+    font-size: 0.9rem;
+  }
+
+  .submitButton, .successButton {
+    padding: 7px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactForm {
+    max-width: 95%;
+    padding: 10px;
+    transform: none;  
+  }
+
+  .contactForm h2 {
+    font-size: 1.4rem;
+  }
+
+  .contactForm p {
+    font-size: 0.8rem;
+  }
+
+  .submitButton, .successButton {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

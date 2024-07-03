@@ -1,0 +1,43 @@
+.pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 14px;
+    flex-grow: 1;
+    white-space: nowrap;
+    background: linear-gradient(-45deg, #32364c, #1b303b, #093f44, #414244);
+    border: 2px solid #0e191f;
+    color: #e0e2ee;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards; /* Animación de entrada */
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .pill:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(-45deg, #414a63, #1e4353, #0b4f52, #4a4b4f);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #1a2429;
+  }
+  
+  .emoji {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .interest {
+    font-weight: bold;
+  }
+  

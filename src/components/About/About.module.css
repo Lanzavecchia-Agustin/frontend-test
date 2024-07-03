@@ -1,0 +1,110 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.about h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.profileImage.loaded {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.summary {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.searchInputTitle {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+  }
+
+  .profileContainer {
+    align-items: flex-start;
+    margin-bottom: 0;
+    height: 80vh;
+  }
+
+  .profileImage {
+    max-width: 200px;
+    height: 80vh;
+  }
+
+  .summaryContainer {
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 100%;
+  }
+
+  .summary {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 20px 80px;
+  }
+
+  .profileImage {
+    max-width: 300px;
+    height: 80vh;
+    width: auto;
+  }
+
+  .summaryContainer {
+    align-items: flex-start;
+    padding-left: 60px;
+    width: auto;
+  }
+
+  .summary {
+    text-align: left;
+  }
+}

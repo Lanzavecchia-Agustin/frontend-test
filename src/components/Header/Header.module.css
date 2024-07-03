@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.036); 
+  color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-bottom: 2px solid #093f44; 
+}
+
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileName {
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.profileImage {
+  width: 40px; /* Incrementar tamaño de imagen */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

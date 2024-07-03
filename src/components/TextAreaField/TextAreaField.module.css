@@ -1,0 +1,26 @@
+.textAreaField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .textAreaField label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .textAreaField textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+    background-color: #164863;
+  }
+  
+
+  .textAreaField textarea::placeholder {
+    color: rgba(160, 151, 151, 0.902);
+  
+    }
