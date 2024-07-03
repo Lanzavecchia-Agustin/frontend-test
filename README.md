@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mi Proyecto Next.js
 
-## Getting Started
+Este es un proyecto creado con Next.js. Sigue estas instrucciones para clonar y ejecutar el proyecto en tu máquina local.
 
-First, run the development server:
+## Requisitos previos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Asegúrate de tener instalado lo siguiente en tu sistema:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (versión 12.0 o superior)
+- npm (normalmente se instala con Node.js)
+- Git
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Clonar el repositorio
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Abre tu terminal.
+2. Ejecuta el siguiente comando para clonar el repositorio:
 
-## Learn More
+   git clone https://github.com/tu-usuario/tu-proyecto-nextjs.git
 
-To learn more about Next.js, take a look at the following resources:
+3. Ingresa al directorio del proyecto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   cd tu-proyecto-nextjs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalar dependencias
 
-## Deploy on Vercel
+Instala las dependencias del proyecto ejecutando:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Ejecutar el proyecto
+
+1. Para iniciar el servidor de desarrollo, ejecuta:
+
+   npm run dev
+
+2. Abre tu navegador y visita `http://localhost:3000` para ver la aplicación.
+
+## Construcción para producción
+
+1. Para construir la aplicación para producción, ejecuta:
+
+   npm run build
+
+2. Para iniciar el servidor de producción, ejecuta:
+
+   npm start
+
+## Comandos adicionales
+
+- `npm test`: Ejecuta las pruebas (si están configuradas).
+
+
+
